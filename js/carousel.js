@@ -33,4 +33,12 @@ $(document).ready(function() {
     };
   });
 
+  setInterval(function() {
+    var currentPosition = $('.active-photo').index('#carousel div');
+    if (currentPosition === 4) {
+      goTo(0);
+    } else {
+      goTo(currentPosition+1);
+    };
+  }, 5000);
 });
