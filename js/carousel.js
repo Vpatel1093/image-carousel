@@ -33,6 +33,11 @@ $(document).ready(function() {
     };
   });
 
+  navDots.on("click", function(btnClicked) {
+    var newPosition = $(btnClicked.target).index('#nav-dots div');
+    goTo(newPosition);
+  });
+
   setInterval(function() {
     var currentPosition = $('.active-photo').index('#carousel div');
     if (currentPosition === 4) {

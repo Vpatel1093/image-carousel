@@ -78,6 +78,10 @@ h1 {
   background-color: white;
 }
 
+#nav-dots div:hover {
+  cursor: pointer;
+}
+
 .active-btn {
   background-color: black !important;
 }
